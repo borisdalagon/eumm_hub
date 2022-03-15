@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorBlanche</item>
+    </style>
+
+    <!-- Theme des bar de dessous. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorEU</item>
+        <item name="android:statusBarColor">@color/colorEU</item>
+        <item name="android:navigationBarColor">@color/colorEU</item>
+
+
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorEU</item>
+        <item name="android:statusBarColor">@color/colorEU</item>
+        <item name="android:navigationBarColor">@color/colorBlancheS</item>
+
+    </style>
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorEU</item>
+        <item name="android:statusBarColor">@color/colorNoir</item>
+        <item name="android:navigationBarColor">@color/colorNoir</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/colorNoir</item>
+        <item name="android:textColorHint">@color/colorNoir3</item>
+        <item name="android:editTextColor">@color/colorNoir</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorNoir2</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/colorEU</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/colorRouge</item>
+    </style>
+
+</resources>

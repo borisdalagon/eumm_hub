@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.Authentification">
+
+    <!--Bloc de tête-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloc_de_tete">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/motif3"
+            android:scaleType="fitXY"
+            android:src="@drawable/motif3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/motif3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/titre_logo"
+                android:background="@drawable/titrelogobleu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_normal"
+                android:fontFamily="@font/roboto_light"
+                android:text="Connectez-vous et faites vos opérations en toute simplicité."
+                android:textColor="@color/colorNoirTrans1"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/bloc_de_tete"
+        android:layout_above="@+id/bloc_de_fond">
+
+
+        <!--Bloc 2 : FrameLayout -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--Bloc du fond-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bgndefond"
+        android:id="@+id/bloc_de_fond"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/motif1"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

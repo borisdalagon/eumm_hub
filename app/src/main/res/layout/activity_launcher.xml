@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEU"
+    tools:context=".core.activities.Launcher">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/courbure"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/curveheaderg"/>
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/logoExpressUnion"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/expressunion2"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/card_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/colorBlancheS"
+                app:cardCornerRadius="11dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/logoeummclient" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/nomLogo"
+                android:layout_marginTop="10dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp">
+
+                <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loader"
+                    android:layout_centerHorizontal="true"
+                    app:tashieloader_animDelay="200"
+                    app:tashieloader_animDur="1000"
+                    android:visibility="gone"
+                    app:tashieloader_dotsColor="@color/colorBlanche"
+                    app:tashieloader_dotsDist="5dp"
+                    app:tashieloader_dotsRadius="5dp"
+                    app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+                    app:tashieloader_noOfDots="6" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FD3F92</color>
+
+
+    <color name="colorBlanche">#ffffff</color>
+    <color name="colorBlancheTrans1">#B2FFFFFF</color>
+    <color name="colorBlancheTrans2">#C6FFFFFF</color>
+    <color name="colorBlancheTransparence">#00FFFFFF</color>
+    <color name="colorBlancheS">#F7F7F8</color>
+    <color name="colorBlancheSTrans1">#DFF7F7F8</color>
+    <color name="colorBlancheS2">#BCF7F7F8</color>
+    <color name="colorBlancheS3">#60F7F7F8</color>
+
+    <color name="colorNoir">#000000</color>
+    <color name="colorNoirTrans1">#DA000000</color>
+
+    <color name="colorGris">#DEDEDE</color>
+
+    <color name="colorEULege">#3078C7</color>
+    <color name="colorEU">#1D5FA7</color>
+    <color name="colorEUTrans1">#F01D5FA7</color>
+    <color name="colorEUTrans2">#C81D5FA7</color>
+    <color name="colorEUTrans3">#A31D5FA7</color>
+    <color name="colorEUFonce">#094587</color>
+    <color name="colorEUFonce2">#053264</color>
+    <color name="colorEUFonce3">#032346</color>
+
+
+    <color name="colorNoir2">#4B4A4A</color>
+    <color name="colorNoir3">#818181</color>
+    <color name="colorNoir4">#B4B4B4</color>
+
+    <color name="colorOrange">#F58220</color>
+    <color name="colorOrangeFonce">#AA2A02</color>
+    <color name="colorVert">#00B806</color>
+    <color name="colorVertBB">#007926</color>
+    <color name="colorViolet">#791288</color>
+    <color name="colorVioletTrans">#2F791288</color>
+    <color name="colorVioletFonce">#2A012F</color>
+    <color name="colorJaune">#F8C200</color>
+    <color name="colorMtn">#FECD1B</color>
+    <color name="colorYup">#EB223D</color>
+
+    <color name="colorWhiteEcoBank">#F7F7F7</color>
+    <color name="colorBlueEcoBank">#0B597E</color>
+    <color name="colorRedEcoBank">#92AF38</color>
+
+    <color name="colorTransparente">#00FFFFFF</color>
+    <color name="colorNoirTransparente">#AE000000</color>
+    <color name="indicator_unselected">#bf000000</color>
+
+    <color name="colorRouge">#C90044</color>
+    <color name="colorEui">#E3001B</color>
+    <color name="colorWari">#33B758</color>
+    <color name="colorEcobank">#005B82</color>
+
+    <color name="colorGrisFain">#D6DAEE</color>
+
+    <color name="dialog_button_color">#213783</color>
+
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre empreinte digital"
+            android:textColor="@color/colorNoir"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt_grand_titre_1"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_disque"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/finger"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic__fingerprint"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apuyer sur le lecteur d'empreinte digital"
+        android:textSize="@dimen/txt_normal"
+        android:id="@+id/t"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorNoir" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/annuler"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorNoir2"
+            android:textSize="@dimen/txt_titre"
+            android:text="ANNULER"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/titre_code"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorEU"
+            android:textSize="@dimen/txt_titre"
+            android:text="SAISIR VOTRE CODE SECRET"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparente"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contour_bottomsheet"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Détail sur le solde"
+            android:textColor="@color/colorNoir"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/txt_grand_titre_3"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/bloc_edittext"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="soldes indicatifs"
+                        android:textSize="@dimen/txt_small"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorNoir" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XAF"
+                        android:textSize="@dimen/txt_small"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorEU" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/principal_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_grand_titre_2"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/colorEU" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="soldes disponible"
+                        android:textSize="@dimen/txt_small"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorNoir" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XAF"
+                        android:textSize="@dimen/txt_small"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/colorEU" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/available_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_grand_titre_2"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/colorEU" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

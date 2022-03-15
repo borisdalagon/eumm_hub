@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">vps580141.ovh.net</domain>
+        <domain includeSubdomains="true">192.168.2.8</domain>
+        <domain includeSubdomains="true">192.168.2.3</domain>
+        <domain includeSubdomains="true">192.168.2.5</domain>
+        <domain includeSubdomains="true">197.159.31.110</domain>
+        <domain includeSubdomains="true">192.168.2.7</domain>
+        <domain includeSubdomains="true">192.168.2.4</domain>
+        <domain includeSubdomains="true">192.168.2.10</domain>
+        <domain includeSubdomains="true">192.168.1.19</domain>
+        <domain includeSubdomains="true">192.168.100.81</domain>
+        <domain includeSubdomains="true">192.168.100.82</domain>
+    </domain-config>
+</network-security-config>

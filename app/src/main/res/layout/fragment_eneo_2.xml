@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlancheS"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bloc_contenu">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/bgr18"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:background="@color/colorBlancheSTrans1"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHearder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/txt_titre"
+                    android:text="Cliquez sur la facture que vous souhaitez payer"
+                    android:textColor="@color/colorNoir2" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textHearder">
+
+                    <ProgressBar
+                        android:id="@+id/load_bills"
+                        android:layout_centerInParent="true"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerFacture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blocAucuneFacture"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp">
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/ic_disque"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"/>
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/imgRapport"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/completed"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aucune facture disponible"
+                            android:textSize="@dimen/txt_grand_titre_1"
+                            android:id="@+id/titreRapport"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/roboto_light"
+                            android:textColor="@color/colorNoir2" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

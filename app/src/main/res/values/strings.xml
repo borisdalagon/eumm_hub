@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">EU Mobile Money</string>
+    <string name="app_titre">EU MOBILE MONEY</string>
+
+
+    <!--Pager welcome-->
+    <string name="pager_btn_skip">Annuler</string>
+    <string name="pager_btn_finish">TERMINER</string>
+    <string name="pager_text_1">Bienvenue chez EXPRESS UNION Mobile Money Distributeur</string>
+    <string name="pager_titre_2">Dépôt</string>
+    <string name="pager_text_2">Faites vos dépôts en compte gratuitement</string>
+    <string name="pager_titre_3">Retrait</string>
+    <string name="pager_text_3">Le moins chère dans les opérations de retrait d\'argent</string>
+    <string name="pager_titre_4">Transfert</string>
+    <string name="pager_text_4">Nous facilitons le transfert d\'argent dans votre pays et à l\'internationnale</string>
+
+    <string name="copyright"><![CDATA[ inc Copyright © 2021]]></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="Recherche_ici">Recherche ici</string>
+
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+    <string name="network_error">ERREUR RESEAU</string>
+    <string name="authentication_failed">Authentification échouée</string>
+    <string name="authentication_succeeded">Authentification réussie</string>
+    <string name="retry">Reessayer</string>
+    <string name="close">Fermer</string>
+    <string name="impossible_to_connect">\"Impossible de se connecter : \"</string>
+    <string name="you_will_receive_sms_confirmation">Vous allez recevoir un SMS de confirmation</string>
+    <string name="required_field">Champs obligatoire</string>
+    <string name="number_format_invalid">Format Montant Invalide</string>
+    <string name="networking_error">Erreur reseau : \n</string>
+    <string name="next">SUIVANT</string>
+    <string name="subscriber_account_number">Numero d\'abonnement :</string>
+    <string name="offer_name">Nom de l\'offre :</string>
+    <string name="amount">Montant :</string>
+    <string name="fees">Frais :</string>
+    <string name="total_amount">Montant total:</string>
+    <string name="account_to_account_description">Cette opération consiste à tranferer de l\'argent vers le compte d\'un client EU Mobile Money</string>
+    <string name="account_to_account_transfer">Transfert Compte à Compte</string>
+    <string name="beneficiary_name">Nom du bénéficiaire</string>
+    <string name="phone_number">Numero de téléphone</string>
+    <string name="sending_money_via_beneficiary_name">Envoyer de l\'argent vers le nom d\'un bénéficiaire</string>
+    <string name="sending_money_via_phone_number_of_a_beneficiary">Envoyer de l\'argent vers le numéro de téléphone d\'un bénéficiaire</string>
+    <string name="account_cash_to_mobile_description">Cette opération consiste à tranferer de l\'argent vers un numéro de téléphone d\'un bénéficiaire qui n\'a pas de compte Mobile Money. A la fin de l\'opération, vous allez recevoir un message. Le message contiendra un code que vous allez devoir communiquer au destinataire. Ce dernier ira donc dans une agence ou un partenaire EXPRESS UNION pour effectuer le paiement du transfert.</string>
+
+
+</resources>

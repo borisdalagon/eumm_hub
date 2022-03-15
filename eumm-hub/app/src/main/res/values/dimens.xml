@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimenssion des textes-->
+    <dimen name="txt_small">10dp</dimen>
+    <dimen name="txt_normal">12dp</dimen>
+    <dimen name="txt_sous_titre">14dp</dimen>
+    <dimen name="txt_titre">16dp</dimen>
+    <dimen name="txt_grand_titre_1">20dp</dimen>
+    <dimen name="txt_grand_titre_2">24dp</dimen>
+    <dimen name="txt_grand_titre_3">28dp</dimen>
+
+    <!--Dimenssion des images-->
+
+
+    <dimen name="statusbar_size">24dp</dimen>
+
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparente"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contour_bottomsheet"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder ce compte ?"
+            android:textColor="@color/colorNoir"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/txt_grand_titre_3"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_normal"
+                    android:fontFamily="@font/roboto_light"
+                    android:textAlignment="center"
+                    android:text="Souhaitez vous sauvegarder ce compte :"
+                    android:textColor="@color/colorNoirTrans1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numeroCompte"
+                    android:textSize="@dimen/txt_normal"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="N° 253663783839 "
+                    android:textColor="@color/colorEU"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_normal"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:text="Quel nom pouvez vous donner à ce compte ?"
+                android:textColor="@color/colorNoirTrans1"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomEnd="@dimen/txt_normal"
+                android:id="@+id/codeActuel"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nomCompte"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Nom du compte"
+                    android:textSize="@dimen/txt_normal"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/bloc_edittext"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:id="@+id/sauvegarder"
+                android:background="@drawable/contour_7"
+                android:fontFamily="@font/roboto_light"
+                android:padding="7dp"
+                android:layout_marginLeft="0dp"
+                android:text="Sauvegarder"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlanche"
+                android:textSize="@dimen/txt_normal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/refuser"
+                android:background="@drawable/contour_6"
+                android:fontFamily="@font/roboto_light"
+                android:layout_toRightOf="@+id/sauvegarder"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:layout_marginLeft="10dp"
+                android:text="Pas nécéssaire"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEU"
+                android:textSize="@dimen/txt_normal" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

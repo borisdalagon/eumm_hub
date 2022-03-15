@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlancheS"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bloc_contenu">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/bgr18"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:background="@color/colorBlancheSTrans1"
+            android:orientation="vertical"
+            android:layout_above="@+id/BlocEnd">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/txt_titre"
+                    android:text="Renseignez votre numéro d'abonnement  "
+                    android:textColor="@color/colorNoir2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/x">
+
+                    <RelativeLayout
+                        android:id="@+id/r_donnee_facture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxCornerRadiusBottomEnd="@dimen/txt_normal"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/numeroPhone"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtNumeroAbonnement"
+                                android:keepScreenOn="false"
+                                android:keyboardNavigationCluster="false"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/colorNoir"
+                                android:hint="Numero d'abonnement  (14 chiffres)"
+                                android:textSize="@dimen/txt_titre"
+                                android:textStyle="bold"
+                                android:inputType="phone"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BlocEnd"
+            android:padding="20dp"
+            android:background="@color/colorBlancheSTrans1"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/suivant"
+                android:background="@color/colorNoir3"
+                android:fontFamily="@font/roboto_light"
+                android:padding="7dp"
+                android:text="@string/next"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlancheS"
+                android:textSize="@dimen/txt_normal" />
+
+            <ProgressBar
+                android:id="@+id/progress_bill_details"
+                style="?android:attr/progressBarStyle"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

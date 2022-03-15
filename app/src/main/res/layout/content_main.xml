@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEU"
+    tools:context=".core.activities.main.MainActivity">
+
+    <!-- Fond Image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/bgr10"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <!--Fond bleu flou-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fond_bleu_trans"
+        />
+
+
+    <!--LOGO-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hearder"
+        android:background="@drawable/degrade_bleu"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/menu"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu" />
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:id="@+id/nomLogo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/titrelogoblanc" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profilUtilateur"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_account_circle" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hearder"
+        android:elevation="50dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!-- Layout Transparent-->
+
+
+                <!--CardView de D'informations Solde-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/colorBlancheS"
+                    app:cardCornerRadius="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/head">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    android:id="@+id/imageProfil"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginRight="10dp"
+                                    app:civ_border_width="2dp"
+                                    app:civ_border_color="@color/colorBlanche" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/imageProfil"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:text="Dalagon boris guy"
+                                        android:textColor="@color/colorNoirTrans1"
+                                        android:textSize="@dimen/txt_grand_titre_2"
+                                        android:textAllCaps="false" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="237 6 00 00 00 00"
+                                            android:textColor="@color/colorEU"
+                                            android:textSize="@dimen/txt_normal"
+                                            android:textStyle="bold" />
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:src="@drawable/flag_cm"/>
+
+                                    </RelativeLayout>
+
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:layout_marginTop="0dp"
+                                        android:background="@color/colorGris"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_below="@+id/head">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="Solde principal"
+                                        android:textSize="@dimen/txt_small"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="XAF"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/colorEU"
+                                        android:textSize="@dimen/txt_titre"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/main_balance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="@color/colorEU"
+                                        android:textSize="32sp"
+                                        android:textStyle="bold" />
+                                    <ProgressBar
+                                        android:id="@+id/loader_main_balance"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_centerInParent="true"
+                                        />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@color/colorGris"/>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/li_detail_solde">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="12dp"
+                                        android:text="Détail sur le solde"
+                                        android:textSize="@dimen/txt_small"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorEU" />
+
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/ic_next"/>
+
+
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--CardView des accès Rapide Menu-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/colorBlancheS"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="Accès Rapide"
+                            android:textColor="@color/colorNoirTrans1"
+                            android:textSize="@dimen/txt_titre" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorGris"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <!--Airtime-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/bloc_envois_compte_compte"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/bgr14"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="0dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/nameTransfertArgent"
+                                        android:text="Transfert d'argent"
+                                        android:textSize="@dimen/txt_small"
+                                        android:maxLines="1"
+                                        android:textAlignment="center"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_toRightOf="@+id/airtime_icon"
+                                        android:layout_toEndOf="@+id/airtime_icon"
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/bloc_envois_compte_compte"
+                                android:layout_toLeftOf="@+id/bloc_envois_argent">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="90dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/colorGris"/>
+
+                            </RelativeLayout>
+
+
+                            <!--Transaction-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/bloc_envois_argent"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/send2"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="0dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Autres Transferts"
+                                        android:textSize="@dimen/txt_small"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_toRightOf="@+id/airtime_icon"
+                                        android:layout_toEndOf="@+id/airtime_icon"
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/bloc_envois_argent"
+                                android:layout_toLeftOf="@+id/bloc_payer_transfert">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="90dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/colorGris"/>
+
+                            </RelativeLayout>
+
+
+                            <!--Commission-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/bloc_payer_transfert"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/receive2"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="0dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payer un transfert"
+                                        android:textSize="@dimen/txt_small"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_toRightOf="@+id/airtime_icon"
+                                        android:layout_toEndOf="@+id/airtime_icon" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorGris"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--Facture-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/bloc_payer_facture"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/facture"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="0dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paiement Facture"
+                                        android:textSize="@dimen/txt_small"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_toRightOf="@+id/airtime_icon"
+                                        android:layout_toEndOf="@+id/airtime_icon"
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/bloc_payer_facture"
+                                android:layout_toLeftOf="@+id/bloc2">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="90dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/colorGris"/>
+
+                            </RelativeLayout>
+
+
+                            <!--Bloc2-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/bloc2"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/autre"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="0dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Autres"
+                                        android:textSize="@dimen/txt_small"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_toRightOf="@+id/airtime_icon"
+                                        android:layout_toEndOf="@+id/airtime_icon"
+                                        />
+
+                                    <RelativeLayout
+                                        android:id="@+id/blocBlanc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorBlancheS">
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/bloc2"
+                                android:layout_toLeftOf="@+id/bloc3">
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="90dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/colorGris"/>
+
+                            </RelativeLayout>
+
+
+                            <!--Bloc3-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/bloc3"
+                                android:orientation="vertical">
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGris"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorEU"
+                            android:text="Les services principaux"
+                            android:gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:textSize="@dimen/txt_small"
+                            android:layout_marginBottom="0dp"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--CardView de Pub-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/colorBlancheS"
+                    app:cardCornerRadius="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/eu"
+                            android:scaleType="fitXY"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/a1"
+                                android:layout_above="@+id/a2"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="''"
+                                    android:id="@+id/t1"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:textSize="16dp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/roboto_light_italic"
+                                    android:textStyle="italic|bold"/>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/t1"
+                                    android:layout_above="@+id/t2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="4dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:gravity="center"
+                                        android:layout_centerVertical="true"
+                                        android:textStyle="italic"
+                                        android:fontFamily="@font/roboto_light_italic"
+                                        android:text="Si vous ne courrez pas après ce que vous voulez, vous ne l'aurez jamais"/>
+
+
+                                </RelativeLayout>
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="''"
+                                    android:id="@+id/t2"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:textSize="16dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/roboto_light_italic"
+                                    android:textStyle="italic|bold"/>
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/a2"
+                                android:layout_margin="4dp"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/colorGris"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nora Robert"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="@dimen/txt_normal"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorEU"/>
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--CardView de D'informations SAV-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/colorBlancheS"
+                    app:cardCornerRadius="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorNoirTrans1"
+                            android:text="Service après vente"
+                            android:fontFamily="@font/roboto_light"
+                            android:textSize="@dimen/txt_titre"
+                            android:layout_marginBottom="10dp"/>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorGris"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img1"
+                                    android:src="@drawable/ic_contact_phone"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/img1"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorEU"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_centerVertical="true"
+                                        android:text="Numero de téléphone"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="10dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_marginLeft="@dimen/txt_small"
+                                        android:layout_centerVertical="true"
+                                        android:text="00237 693 00 01 58"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="10dp"/>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/img2"
+                                    android:src="@drawable/ic_contact_mail"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/img2"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorEU"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_centerVertical="true"
+                                        android:text="Adresse mail"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="10dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorNoir"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_centerVertical="true"
+                                        android:text="contact@expressunion.net"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="10dp"/>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/contour_1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorNoirTrans1"
+                                        android:layout_centerVertical="true"
+                                        android:text="Vous pouvez échange avec un téléconseillez"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:textSize="@dimen/txt_normal"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="10dp"/>
+
+
+                                    <Button
+                                        android:layout_width="150dp"
+                                        android:layout_height="35dp"
+                                        android:background="@color/colorEU"
+                                        android:fontFamily="@font/roboto_light"
+                                        android:padding="7dp"
+                                        android:text="Appeler le SAV  ?"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorBlanche"
+                                        android:textSize="@dimen/txt_normal" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/sav"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentRight="true" />
+
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/courbure"
+        android:elevation="1dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/curveheaderg2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="1dp"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/curveheaderg22" />
+
+
+</RelativeLayout>

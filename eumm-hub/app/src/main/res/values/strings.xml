@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EU Mobile Money</string>
+    <string name="app_titre">EU MOBILE MONEY</string>
+
+
+    <!--Pager welcome-->
+    <string name="pager_btn_skip">Annuler</string>
+    <string name="pager_btn_finish">TERMINER</string>
+    <string name="pager_text_1">Bienvenue chez EXPRESS UNION Mobile Money Distributeur</string>
+    <string name="pager_titre_2">Dépôt</string>
+    <string name="pager_text_2">Faites vos dépôts en compte gratuitement</string>
+    <string name="pager_titre_3">Retrait</string>
+    <string name="pager_text_3">Le moins chère dans les opérations de retrait d\'argent</string>
+    <string name="pager_titre_4">Transfert</string>
+    <string name="pager_text_4">Nous facilitons le transfert d\'argent dans votre pays et à l\'internationnale</string>
+
+    <string name="copyright"><![CDATA[ inc Copyright © 2021]]></string>
+
+
+</resources>

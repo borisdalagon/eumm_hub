@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: "org.sonarqube"
+
+android {
+    compileSdkVersion 30
+    //buildToolsVersion "30.0.1"
+    compileOptions{
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    defaultConfig {
+        applicationId "com.ufipay.eummhub"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "2.0"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains' , module:'annotations'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':passcodeview')
+    def room_version = "2.3.0"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //Le loarder
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+
+    //animation
+    implementation 'com.appolica:flubber:1.0.1'
+
+    //circleImageView
+    implementation 'com.mikhaellopez:circularimageview:4.1.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.bumptech.glide:annotations:4.9.0'
+    implementation('com.github.bumptech.glide:okhttp3-integration:4.0.0') {
+        exclude group: 'glide-parent'
+    }
+
+    implementation 'com.rom4ek:arcnavigationview:1.0.3'
+
+    implementation group: 'in.dd4you.animatoo', name: 'anim', version: '1.0.0'
+
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.22'
+
+    //FingerPrint
+    // implementation 'com.github.aitorvs.fingerlock:core:1.0.0';
+    // implementation 'com.github.aitorvs.fingerlock:dialog:1.0.0';
+    implementation 'com.github.dev-prajwal21:FingerprintAssistant:1.0';
+
+    //Mpin PasscodeView
+    //implementation 'com.kevalpatel2106:passcodeview:2.0.0'
+
+    //Room Database
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // optional - RxJava2 support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+    // optional - RxJava3 support for Room
+    implementation "androidx.room:room-rxjava3:$room_version"
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+    // optional - Test helpers
+   // testImplementation "androidx.room:room-testing:$room_version"
+
+    // Event Bus Library
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //JSON parsing and serializing library
+    //Converter for loganSquare JSON serializer for RetroFit.
+    //logs HTTP request and response data  : could use android's http lib also for this. Retrofit is chosen cuz' is easy
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    //For progressBar.... Could use android's progress bar instead
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    //for dialog
+    implementation 'com.github.umairayub79:MaDialog:1.3'
+
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.mockito:mockito-inline:3.4.0'
+    testImplementation "org.mockito:mockito-core:3.8.0"
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Espresso UI Testing
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.3.0"
+
+    // Optional if you need to detect intents.
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:3.3.0"
+
+}

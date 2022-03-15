@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEU"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_disque"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imgRapport"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_done_deep"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operation réussie"
+                android:textSize="@dimen/txt_grand_titre_1"
+                android:id="@+id/titreRapport"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlanche" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:layout_marginTop="10dp"
+                android:text="Message du succes"
+                android:textSize="@dimen/txt_titre"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlanche" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/relancer"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/contour_4"
+                    android:fontFamily="@font/roboto_light"
+                    android:padding="7dp"
+                    android:text="RELANCER"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorEU"
+                    android:textSize="@dimen/txt_normal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/fermer"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/contour_2"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_toRightOf="@+id/relancer"
+                    android:padding="7dp"
+                    android:text="FERMER"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlancheS"
+                    android:textSize="@dimen/txt_normal" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

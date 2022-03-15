@@ -1,0 +1,52 @@
+image: 192.168.2.8:8124/tools/androidsdk-28:one
+
+variables:
+    ANDROID_COMPILE_SDK: "30"
+    ANDROID_BUILD_TOOLS: "30.0.2"
+    ANDROID_SDK_TOOLS:   "4333796"
+    GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+before_script:
+    #- export GRADLE_USER_HOME=`pwd/.gradle
+     - export GRADLE_USER_HOME=$(pwd)/.gradle
+     - chmod +x ./gradlew
+
+stages:
+    - build
+    - test
+
+lintDebug:
+    stage: build
+    tags:
+        - android
+    script:
+        - ./gradlew --build-cache -Pci --console=plain :app:lintDebug -PbuildDir=lint
+
+assembleDebug:
+    stage: build
+    tags:
+        - android
+    script:
+        - ./gradlew --build-cache assemble
+    artifacts:
+        paths:
+            - app/build/outputs/
+    cache:
+        key: "$CI_COMMIT_REF_NAME"
+        policy: push
+        paths:
+            - build
+            - .gradle
+
+debugTests:
+    stage: test
+    tags:
+        - android
+    script:
+        - ./gradlew -Pci --console=plain :app:testDebug
+    cache:
+        key: "$CI_COMMIT_REF_NAME"
+        policy: push
+        paths:
+            - build
+            - .gradle

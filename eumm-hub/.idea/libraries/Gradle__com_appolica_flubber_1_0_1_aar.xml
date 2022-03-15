@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.appolica:flubber:1.0.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6077212b924deb562a0df0d93604cbd5/jetified-flubber-1.0.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6077212b924deb562a0df0d93604cbd5/jetified-flubber-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6077212b924deb562a0df0d93604cbd5/jetified-flubber-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6077212b924deb562a0df0d93604cbd5/jetified-flubber-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appolica/flubber/1.0.1/9c3ed56be048f9d41a6c8e796796e518fa183b2e/flubber-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appolica/flubber/1.0.1/46268e001855564decb48da2265db6cfdd0257a6/flubber-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

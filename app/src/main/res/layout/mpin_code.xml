@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mpinFingerPrint"
+    android:background="@color/colorBlancheS"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/logoeummclient3"/>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:background="@color/colorBlancheSTrans1"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/logo"
+        android:id="@+id/titre">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titre_code_1"
+            android:text="Entrez votre code secrêt"
+            android:textColor="@color/colorNoir"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="@dimen/txt_grand_titre_1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/close"
+            android:visibility="gone"
+            android:src="@drawable/ic_close_rouge"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/compte"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/titre">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero de compte :"
+            android:textSize="@dimen/txt_normal"
+            android:id="@+id/titre_code"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/colorNoir" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/titre_code"
+            android:layout_marginLeft="20dp"
+            android:text="+237 693000158"
+            android:textSize="@dimen/txt_normal"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorEU" />
+
+
+    </RelativeLayout>
+
+
+    <com.kevalpatel.passcodeview.PinView
+        android:id="@+id/pattern_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compte"
+        android:layout_above="@+id/bloc_empreinte"
+        app:dividerColor="@color/colorEU"
+        app:fingerprintEnable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:fingerprintTextColor="@color/colorEU"
+        app:fingerprintTextSize="@dimen/txt_titre"
+        app:giveTactileFeedback="true"
+        app:titleTextColor="@color/colorNoir"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloc_empreinte"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:id="@+id/finger"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic__fingerprint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_empreinte"
+            android:text="Apuyer sur le lecteur d'empreinte digital"
+            android:textSize="@dimen/txt_titre"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/colorEU" />
+
+    </LinearLayout>
+
+</RelativeLayout>

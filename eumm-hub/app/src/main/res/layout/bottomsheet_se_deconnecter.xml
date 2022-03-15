@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous souhaitez vous déconnecter ?"
+        android:textColor="@color/colorNoir"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/txt_grand_titre_3"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/bloc_edittext"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logout"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:id="@+id/valider"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorEU"
+            android:fontFamily="@font/roboto_light"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:text="Se déconnecter ?"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlanche"
+            android:textSize="@dimen/txt_normal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_item_compte"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardBackgroundColor="@color/colorBlanche">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+
+                <RelativeLayout
+                    android:id="@+id/l1"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:background="@color/colorEU">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/cercle"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/l1"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/ic_cercle"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lettrePremiere"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="A"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorNoir2"
+                        android:textSize="@dimen/txt_grand_titre_1" />
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/f1"
+                    android:layout_toRightOf="@+id/cercle"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nom"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/roboto"
+                        android:text="NOM DU COMPTE"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorNoir2"
+                        android:textSize="@dimen/txt_normal" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_marginTop="10dp"
+                        android:text="Compte"                                                        android:textStyle="bold"
+                        android:textColor="@color/colorEU"
+                        android:textSize="@dimen/txt_small" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/numeroFacture"
+                            android:layout_alignParentTop="true"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="1298383939 "                                                        android:textStyle="bold"
+                            android:textColor="@color/colorNoir2"
+                            android:textSize="@dimen/txt_normal" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_next_noir" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

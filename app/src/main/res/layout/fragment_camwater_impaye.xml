@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlancheS"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bloc_contenu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="10dp"
+                  android:orientation="vertical">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="0dp"
+                          android:fontFamily="@font/roboto"
+                          android:text="Entrez le montant du solde impayé"
+                          android:textColor="@color/colorEU"
+                          android:textSize="@dimen/txt_titre"
+                          android:textStyle="bold" />
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:visibility="gone"
+                          android:src="@drawable/ic_info_bleu"
+                          android:layout_alignParentRight="true"/>
+
+                  </RelativeLayout>
+
+                  <ScrollView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginBottom="50dp"
+                          android:layout_marginTop="10dp">
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Numero de compte :"
+                                  android:textSize="@dimen/txt_normal"
+                                  android:fontFamily="@font/roboto_light"
+                                  android:textColor="@color/colorNoir" />
+
+                              <TextView
+                                  android:id="@+id/bill_number"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/txt_normal"
+                                  android:textStyle=""
+                                  android:layout_alignParentRight="true"
+                                  android:fontFamily="@font/roboto_light"
+                                  android:textColor="@color/colorEU" />
+
+
+                          </RelativeLayout>
+
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Date limite :"
+                                  android:textSize="@dimen/txt_normal"
+                                  android:fontFamily="@font/roboto_light"
+                                  android:textColor="@color/colorNoir" />
+
+                              <TextView
+                                  android:id="@+id/bill_due_date"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/txt_normal"
+                                  android:layout_alignParentRight="true"
+                                  android:fontFamily="@font/roboto_light"
+                                  android:textColor="@color/colorEU" />
+
+
+                          </RelativeLayout>
+
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="30dp">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/a"
+                                  android:text="Nom du client :"
+                                  android:layout_centerVertical="true"
+                                  android:textSize="@dimen/txt_normal"
+                                  android:fontFamily="@font/roboto_light"
+                                  android:textColor="@color/colorNoir" />
+
+                              <TextView
+                                  android:id="@+id/beneficiary_account_name"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_toRightOf="@+id/a"
+                                  android:layout_marginLeft="8dp"
+                                  android:gravity="right"
+                                  android:textSize="@dimen/txt_titre"
+                                  android:layout_alignParentRight="true"
+                                  android:fontFamily="@font/roboto"
+                                  android:textStyle="bold"
+                                  android:textColor="@color/colorNoir" />
+
+
+                          </RelativeLayout>
+
+                          <View
+                              android:layout_width="match_parent"
+                              android:layout_height="1dp"
+                              android:background="@color/colorNoir3"
+                              android:layout_marginTop="8dp"/>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="7dp"
+                              android:background="@drawable/contour_5"
+                              android:orientation="vertical">
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp">
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="Devise"
+                                      android:textSize="@dimen/txt_small"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:text="XAF"
+                                      android:textColor="@color/colorEU"
+                                      android:textSize="@dimen/txt_small" />
+
+
+                              </RelativeLayout>
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp">
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="Impayé :"
+                                      android:textSize="@dimen/txt_small"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <TextView
+                                      android:id="@+id/impaye"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir"
+                                      android:textSize="@dimen/txt_normal" />
+
+                                  <ProgressBar
+                                      android:id="@+id/loader_unpaids"
+                                      android:layout_width="20dp"
+                                      android:layout_height="20dp"
+                                      android:layout_alignParentRight="true"
+                                      android:visibility="gone"
+                                      />
+
+
+                              </RelativeLayout>
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp">
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="Pénalité :"
+                                      android:textSize="@dimen/txt_small"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <TextView
+                                      android:id="@+id/penalite"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir"
+                                      android:textSize="@dimen/txt_normal" />
+
+                                  <ProgressBar
+                                      android:id="@+id/loader_penalties"
+                                      android:layout_width="20dp"
+                                      android:layout_height="20dp"
+                                      android:layout_alignParentRight="true"
+                                      android:visibility="gone"
+                                      />
+
+                              </RelativeLayout>
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp">
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="Minimum à payer :"
+                                      android:textSize="@dimen/txt_small"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <TextView
+                                      android:id="@+id/minimumPaye"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentRight="true"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir"
+                                      android:textSize="@dimen/txt_normal" />
+
+                                  <ProgressBar
+                                      android:id="@+id/loader_minimum_payable"
+                                      android:layout_width="20dp"
+                                      android:layout_height="20dp"
+                                      android:layout_alignParentRight="true"
+                                      android:visibility="gone"
+                                      />
+
+
+                              </RelativeLayout>
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="20dp">
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="Total à payer:"
+                                      android:layout_centerVertical="true"
+                                      android:textSize="@dimen/txt_small"
+                                      android:textStyle="bold"
+                                      android:fontFamily="@font/roboto_light"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <TextView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:id="@+id/montantTotal"
+                                      android:textStyle="bold"
+                                      android:textSize="@dimen/txt_titre"
+                                      android:layout_alignParentRight="true"
+                                      android:fontFamily="@font/roboto"
+                                      android:textColor="@color/colorNoir" />
+
+                                  <ProgressBar
+                                      android:id="@+id/loader_amount_total_to_pay"
+                                      android:layout_width="20dp"
+                                      android:layout_height="20dp"
+                                      android:layout_alignParentRight="true"
+                                      android:visibility="gone"
+                                      />
+
+                              </RelativeLayout>
+
+                          </LinearLayout>
+
+
+                          <RadioGroup
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="0dp"
+                              android:layout_marginTop="30dp"
+                              android:layout_marginRight="30dp"
+                              android:layout_marginBottom="6dp"
+                              android:orientation="vertical">
+
+                              <RadioButton
+                                  android:id="@+id/rb_payer_total"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:onClick="onClick"
+                                  android:text="Payer la totalité"
+                                  android:textColor="@color/colorEU"
+                                  android:textSize="14dp"
+                                  android:layout_marginBottom="10dp"
+                                  android:theme="@style/MyRadioButton" />
+
+
+                              <RadioButton
+                                  android:id="@+id/rb_payer_partiel"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:onClick="onClick"
+                                  android:text="Payer une partie"
+                                  android:textColor="@color/colorEU"
+                                  android:textSize="14dp"
+                                  android:theme="@style/MyRadioButton" />
+
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+
+                                  <LinearLayout
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:visibility="gone"
+                                      android:orientation="vertical"
+                                      android:id="@+id/re_edt_montant">
+
+
+                                      <RelativeLayout
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+
+                                          <com.google.android.material.textfield.TextInputLayout
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              app:boxCornerRadiusBottomEnd="@dimen/txt_normal"
+                                              android:layout_centerVertical="true"
+                                              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                                              <com.ufipay.eummhub.core.classe.CurrencyEditText
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:id="@+id/amountToPay"
+                                                  android:hint="Montant"
+                                                  style="@style/AppTheme"
+                                                  android:textSize="@dimen/txt_titre"
+                                                  android:textStyle="bold"
+                                                  android:drawableRight="@drawable/ic_back_left"
+                                                  android:layout_centerVertical="true"
+                                                  android:textColorHint="@color/colorNoir3"/>
+
+
+                                          </com.google.android.material.textfield.TextInputLayout>
+
+                                          <TextView
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="wrap_content"
+                                              android:id="@+id/code_pays"
+                                              android:text="XAF"
+                                              android:layout_centerVertical="true"
+                                              android:textSize="18dp"
+                                              android:textStyle="bold"
+                                              android:layout_alignParentRight="true"
+                                              android:layout_marginRight="10dp"
+                                              android:textColor="@color/colorEU" />
+
+
+                                      </RelativeLayout>
+
+                                      <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:text="Le montant doit être supérieur ou égale au minimum à payer"
+                                          android:textSize="@dimen/txt_small"
+                                          android:textStyle="italic"
+                                          android:layout_marginBottom="30dp"
+                                          android:fontFamily="@font/roboto_light"
+                                          android:textColor="@color/colorNoir2" />
+
+
+                                  </LinearLayout>
+
+
+                              </LinearLayout>
+
+
+                          </RadioGroup>
+
+
+                      </LinearLayout>
+
+                  </ScrollView>
+
+
+
+
+
+              </LinearLayout>
+
+          </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlancheS"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/valider"
+                android:background="@color/colorEU"
+                android:fontFamily="@font/roboto_light"
+                android:padding="7dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:imeOptions="actionNone"
+                android:text="VALIDER"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlancheS"
+                android:textSize="@dimen/txt_normal" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/premierLoader"
+        android:background="@color/colorBlancheS">
+
+        <ProgressBar
+            android:id="@+id/progressBar111"
+            style="?android:attr/progressBarStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

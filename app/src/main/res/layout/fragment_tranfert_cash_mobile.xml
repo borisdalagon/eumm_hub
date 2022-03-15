@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlancheS"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bloc_contenu">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="100dp"
+                android:background="@color/colorBlancheSTrans1"
+                android:orientation="vertical"
+                android:layout_above="@+id/BlocEnd">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contour_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_close_noir"
+                        android:layout_margin="3dp"
+                        android:layout_alignParentRight="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="4dp"
+                            android:text="Envois CASH vers MOBILE"
+                            android:fontFamily="@font/roboto_light" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorNoir"
+                            android:justificationMode="inter_word"
+                            android:text="@string/account_cash_to_mobile_description"
+                            android:fontFamily="@font/roboto_light" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/colorEU"
+                            android:textSize="@dimen/txt_titre"
+                            android:text="Destinataire"
+                            android:textStyle="bold"
+                            android:layout_marginTop="0dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_info_bleu"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                    <Spinner
+                        android:id="@+id/simpleSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:popupBackground="@color/colorBlanche"
+                        android:backgroundTint="@color/colorEU"/>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+237"
+                            android:id="@+id/codePays"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="26.0dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorEU"
+                            android:textSize="@dimen/txt_titre"
+                            android:fontFamily="@font/roboto"/>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxCornerRadiusBottomEnd="@dimen/txt_normal"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/numeroPhone"
+                            android:layout_toLeftOf="@+id/card_contact"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtNumeroPhone"
+                                android:keepScreenOn="false"
+                                android:keyboardNavigationCluster="false"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/colorNoir"
+                                android:drawableLeft="@drawable/ic_invisible"
+                                android:hint="@string/phone_number"
+                                android:textSize="@dimen/txt_titre"
+                                android:textStyle="bold"
+                                android:inputType="phone"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardElevation="5dp"
+                            android:id="@+id/card_contact"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            app:cardBackgroundColor="@color/colorBlancheS"
+                            app:cardCornerRadius="4dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/ic_contacts"/>
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/colorEU"
+                            android:textSize="@dimen/txt_titre"
+                            android:text="Montant du transfert"
+                            android:textStyle="bold"
+                            android:layout_marginTop="0dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_info_bleu"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="XAF"
+                            android:id="@+id/devise"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="25.0dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorEU"
+                            android:textSize="@dimen/txt_titre"
+                            android:fontFamily="@font/roboto"/>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxCornerRadiusBottomEnd="@dimen/txt_normal"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                            <com.ufipay.eummhub.core.classe.CurrencyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtMontant"
+                                android:hint="Montant"
+                                style="@style/AppTheme"
+                                android:textSize="@dimen/txt_titre"
+                                android:textStyle="bold"
+                                android:layout_centerVertical="true"
+                                android:textColorHint="@color/colorNoir3"/>
+
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BlocEnd"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="6dp"
+            android:background="@color/colorBlancheS"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/suivant"
+                android:background="@color/colorNoir3"
+                android:fontFamily="@font/roboto_light"
+                android:padding="7dp"
+                android:text="SUIVANT"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlancheS"
+                android:textSize="@dimen/txt_normal" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

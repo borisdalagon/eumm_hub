@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorEU</item>
+    </style>
+
+    <!-- Theme des bar de dessous. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorEU</item>
+        <item name="colorPrimaryDark">@color/colorEU</item>
+        <item name="colorAccent">@color/colorEU</item>
+        <item name="android:statusBarColor">@color/colorEU</item>
+        <item name="android:navigationBarColor">@color/colorEU</item>
+    </style>
+
+</resources>
